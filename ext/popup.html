@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TalkTube</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    
+        body {
+            width: max-content;
+            max-width: 800px;
+        }
+    
+        button {
+            background-color: rgb(255, 255, 255);
+            color: rgb(4, 0, 0);
+            border-radius: 8px;
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            font-size: large;
+            margin: auto;
+            display: block;
+            border-color: rgb(7, 7, 7);
+        }
+    
+        button[disabled] {
+            background-color: rgb(0, 0, 0);
+            color: rgb(1, 0, 0);
+            border-radius: 8px;
+            width: max-content;
+            height: max-content;
+            padding: 10px;
+            font-size: large;
+            margin: auto;
+            display: block;
+            border-color: rgb(250, 244, 245);
+        }
+    
+        p {
+            font-size: medium;
+        }
+    </style>
+ 
+</head>
+
+<body>
+    <h1>Here are the most relevant sections in the video with their respective time-stamps: </h1>
+    <p style="text-align: center;" id="summary">Loading....  </p>
+    <br>
+    <input style="text-align: center;" type="text" id="dataInput" placeholder="Enter your question...">
+    <br>
+    <p id="answer"> </p>
+    <br>
+    <button id="sendDataButton">ASK</button>
+
+   <script src="popup.js"></script>
+</body>
+
+</html>
